@@ -10439,7 +10439,8 @@ section#form form#profileForm .form-group input,
 section#form form#profileForm .form-group textarea {
   padding: 1.25rem;
 }
-section#form form#profileForm .form-group input.form-control {
+section#form form#profileForm .form-group input.form-control,
+section#form form#profileForm .form-group select {
   height: auto;
 }
 section#form form#profileForm .form-group-textarea {
