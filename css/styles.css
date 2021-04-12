@@ -10435,13 +10435,10 @@ section#form .section-heading, .form-check-label {
 section#form form#profileForm .form-group {
   margin-bottom: 1.5rem;
 }
-section#form form#profileForm .form-group input,
-section#form form#profileForm .form-group textarea {
-  padding: 1.25rem;
-}
 section#form form#profileForm .form-group input.form-control,
 section#form form#profileForm .form-group select {
   height: auto;
+  padding: 1.25rem;
 }
 section#form form#profileForm .form-group-textarea {
   height: 100%;
