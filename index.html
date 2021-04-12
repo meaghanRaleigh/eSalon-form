@@ -206,12 +206,14 @@
                                 <image id="profileImage" src="https://via.placeholder.com/100" />
                                 <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
                             </div>
-                            <div class="form-check">
-                            <em class="form-check-label">How do you Identify?</em>
-                              <input class="form-check-input" type="radio" name="Gender" id="Female" value="female" checked>
-                              <label class="form-check-label" for="Female">
-                                Female
-                              </label>
+                            <div class="form-group">
+                                 <em class="form-check-label">How do you Identify?</em>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="Gender" id="Female" value="female" checked>
+                                  <label class="form-check-label" for="Female">
+                                    Female
+                                  </label>
+                                </div>
                             </div>
                             <div class="form-check">
                               <input class="form-check-input" type="radio" name="Gender" id="Male" value="male">
@@ -237,12 +239,17 @@
                                 Other, not listed, choose not to disclose
                               </label>
                             </div>
-                        <div class="form-check">
+                    
+                        <div class="form-group">
                             <label class="form-check-label" for="consent">Marketing Consent</label>
-                            <input type="checkbox" id="consent" class="form-check-input" required="required"data-validation-required-message="Please confirm consent."> Yes
-                             <p class="help-block text-danger"></p>
-                              <input type="checkbox" id="consent" class="form-check-input" required="required"data-validation-required-message="Please confirm consent."> No
-                             <p class="help-block text-danger"></p>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="yes">
+                              <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="no">
+                              <label class="form-check-label" for="inlineCheckbox2">2</label>
+                            </div>
                         </div>
                     </div>
                     <div class="text-center">
