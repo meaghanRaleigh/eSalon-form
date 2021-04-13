@@ -10429,7 +10429,7 @@ section#form {
   background-repeat: no-repeat;
   background-position: center;
 }
-section#form .section-heading, .form-check-label {
+section#form .section-heading, .form-check-label, .form-control-file {
   color: #fff;
 }
 section#form form#profileForm .form-group {
