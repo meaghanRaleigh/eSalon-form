@@ -14,13 +14,9 @@ $(function () {
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var address = $("input#address").val();
-            var address2 = $("input#address2").val();
             var city = $("input#city").val();
             var state = $("select#state").val();
             var zip = $("input#zip").val();
-            var profilePhoto = $("input#profilePhoto").val();
-            var Gender = $("input radio").val();
-            var consent = $("input checkbox").val();
             var firstName = fname; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(" ") >= 0) {
@@ -37,13 +33,9 @@ $(function () {
                     phone: phone,
                     email: email,
                     address: address,
-                    address2: address2,
                     city: city,
                     state: state,
                     zip: zip,
-                    profilePhoto: profilePhoto,
-                    Gender: Gender,
-                    consent: consent,
                 },
                 cache: false,
                 success: function () {
