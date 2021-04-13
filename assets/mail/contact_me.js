@@ -1,6 +1,6 @@
 $(function () {
     $(
-        "#profileForm input,#profileForm textarea,#profileForm button"
+        "#profileForm input,#profileForm button"
     ).jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
