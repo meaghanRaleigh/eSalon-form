@@ -41,7 +41,7 @@ $(function () {
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields
-                    $("#contactForm").trigger("reset");
+                    $("#profileForm").trigger("reset");
                 },
                 error: function () {
                     // Fail message
