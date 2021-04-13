@@ -117,10 +117,8 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <label class="py-1 my-2" for="email">Email *</label>
-                                    <input class="form-control" id="email" type="email" placeholder="Email *" required="required">
-                                     <div class="invalid-feedback text-danger">
-                                        Please enter your email.
-                                    </div>
+                                    <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Please enter your email." aria-invalid="true">
+                                    <p class="text-danger help-block"></p>
                                 </div>
                                 <div class="col-sm-6">
                                     <label class="py-1 my-2" for="phone">Phone</label>
