@@ -1,6 +1,6 @@
 $(function () {
     $(
-        "#contactForm input,#contactForm textarea,#contactForm button"
+        "#profileForm input,#profileForm textarea,#profileForm button"
     ).jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
@@ -62,7 +62,7 @@ $(function () {
                     );
                     $("#success > .alert-danger").append("</div>");
                     //clear all fields
-                    $("#contactForm").trigger("reset");
+                    $("#profileForm").trigger("reset");
                 },
                 complete: function () {
                     setTimeout(function () {
