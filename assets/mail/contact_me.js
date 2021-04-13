@@ -9,14 +9,22 @@ $(function () {
         submitSuccess: function ($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var name = $("input#name").val();
+            var fname = $("input#fname").val();
+            var lname = $("input#lname").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
-            var firstName = name; // For Success/Failure Message
+            var address = $("input#address").val();
+            var address2 = $("input#address2").val();
+            var city = $("input#city").val();
+            var state = $("select#state").val();
+            var zip = $("input#zip").val();
+            var profilePhoto = $("input#profilePhoto").val();
+            var Gender = $("input radio").val();
+            var consent = $("input checkbox").val();
+            var firstName = fname; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(" ") >= 0) {
-                firstName = name.split(" ").slice(0, -1).join(" ");
+                firstName = fname.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
@@ -24,10 +32,18 @@ $(function () {
                 url: "/assets/mail/contact_me.php",
                 type: "POST",
                 data: {
-                    name: name,
+                    fname: fname,
+                    lname: lname,
                     phone: phone,
                     email: email,
-                    message: message,
+                    address: address,
+                    address2: address2,
+                    city: city,
+                    state: state,
+                    zip: zip,
+                    profilePhoto: profilePhoto,
+                    Gender: Gender,
+                    consent: consent,
                 },
                 cache: false,
                 success: function () {
@@ -83,6 +99,6 @@ $(function () {
 });
 
 /*When clicking on Full hide fail/success boxes */
-$("#name").focus(function () {
+$("#fname").focus(function () {
     $("#success").html("");
 });

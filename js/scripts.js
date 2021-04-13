@@ -29,6 +29,9 @@
             }
         }
     });
+    $(document).on('click', 'input[type="checkbox"]', function() {      
+        $('input[type="checkbox"]').not(this).prop('checked', false);      
+    });
 
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
