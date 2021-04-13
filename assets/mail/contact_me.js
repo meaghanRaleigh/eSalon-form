@@ -9,9 +9,10 @@ $(function () {
         submitSuccess: function ($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var name = $("input#name").val();
+            var fname = $("input#fname").val();
+            var lname = $("input#lname").val();
             var email = $("input#email").val();
-            var firstName = name; // For Success/Failure Message
+            var firstName = fname; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(" ") >= 0) {
                 firstName = fname.split(" ").slice(0, -1).join(" ");
@@ -22,7 +23,7 @@ $(function () {
                 url: "/assets/mail/contact_me.php",
                 type: "POST",
                 data: {
-                    name: name,
+                    fname: fname,
                     lname: lname,
                     email: email,
                 },
@@ -40,7 +41,7 @@ $(function () {
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields
-                    $("#profileForm").trigger("reset");
+                    $("#contactForm").trigger("reset");
                 },
                 error: function () {
                     // Fail message
