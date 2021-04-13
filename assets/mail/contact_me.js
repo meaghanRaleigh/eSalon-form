@@ -12,11 +12,6 @@ $(function () {
             var fname = $("input#fname").val();
             var lname = $("input#lname").val();
             var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var address = $("input#address").val();
-            var city = $("input#city").val();
-            var state = $("select#state").val();
-            var zip = $("input#zip").val();
             var firstName = fname; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(" ") >= 0) {
@@ -30,12 +25,7 @@ $(function () {
                 data: {
                     fname: fname,
                     lname: lname,
-                    phone: phone,
                     email: email,
-                    address: address,
-                    city: city,
-                    state: state,
-                    zip: zip,
                 },
                 cache: false,
                 success: function () {
