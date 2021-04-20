@@ -10449,10 +10449,6 @@ header.masthead .masthead-heading {
   backface-visibility: hidden;
 }
 
-.card__face--front {
-  background: red;
-}
-
 .card__face--back {
   background: blue;
   transform: rotateY(180deg);
