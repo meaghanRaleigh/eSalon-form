@@ -10416,11 +10416,12 @@ header.masthead .masthead-heading {
   }
 }
 .scene {
-  width: 200px;
-  height: 260px;
-  border: 1px solid #CCC;
-  margin: 40px 0;
-  perspective: 600px;
+    width: 500px;
+    height: 525px;
+    border: 1px solid #CCC;
+    margin: 10px auto;
+    perspective: 600px;
+}
 }
 
 .card {
