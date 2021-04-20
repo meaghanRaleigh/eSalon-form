@@ -10430,6 +10430,7 @@ header.masthead .masthead-heading {
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+  background-color: transparent;
 }
 
 .card.is-flipped {
