@@ -32,6 +32,10 @@
     $(document).on('click', 'input[type="checkbox"]', function() {      
         $('input[type="checkbox"]').not(this).prop('checked', false);      
     });
+    var card = document.querySelector('.card');
+    card.addEventListener( 'click', function() {
+      card.classList.toggle('is-flipped');
+    });
 
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
